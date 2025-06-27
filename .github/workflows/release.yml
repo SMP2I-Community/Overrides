@@ -13,7 +13,7 @@ jobs:
         pip install requests -y
         python install_mods.py
     - name: Push branch
-      uses: dsayling/commit-branch-check-action@v1
+      uses: commit-check/commit-check-action@v1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: "Download new mods"
@@ -22,7 +22,7 @@ jobs:
         delete-after-checks: true
         
     - name: Create a Release
-      uses: eaaiezza/create-release@v1
+      uses: actions/create-release@v1
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
