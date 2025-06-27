@@ -1,8 +1,6 @@
 name: Publish Overrides
 on:
-  push:
-    branches:
-      - 'downloaded'
+  push
 jobs:
   build:
     runs-on: ubuntu-latest
