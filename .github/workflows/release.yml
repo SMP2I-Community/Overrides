@@ -20,9 +20,9 @@ jobs:
         new_branch: downloaded
         
     - name: Create a Release
-      uses: actions/create-release@v1
+      uses: acaaiezza/create-release@master
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         release_branch: downloaded
         tag: ${{ github.run_number }}
