@@ -21,9 +21,10 @@ jobs:
         
     - name: Create a Release
       uses: aaiezza/create-release@v1.0.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         release_branch: downloaded
         tag: ${{ github.run_number }}
         name: ${{ github.run_number }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
