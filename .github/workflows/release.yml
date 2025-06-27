@@ -1,0 +1,31 @@
+name: Publish Overrides
+on:
+  push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5 
+      with:
+        python-version: '3.13'
+    - run: pip install requests -y
+    - run: python install_mods.py
+
+    - name: Push branch
+      uses: dsayling/commit-branch-check-action@v0.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Download new mods"
+        dest-branch: downloaded
+        verify-checks: true
+        delete-after-checks: true
+        
+    - name: Create a Release
+      uses: eaaiezza/create-release@master
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        release_branch: downloaded
+        tag: ${{ github.run_number }}
+        title: ${{ github.run_number }}
