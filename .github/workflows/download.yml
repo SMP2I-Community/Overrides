@@ -21,6 +21,6 @@ jobs:
       with:
         add: '.'
         commit: '--message "update overrides"'
-        # push: 'origin downloaded --set-upstream --force'
         new_branch: 'downloaded'
+        push: 'origin downloaded --set-upstream --force'
         default_author: 'github_actions'
