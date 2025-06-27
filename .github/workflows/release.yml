@@ -11,7 +11,7 @@ jobs:
         python-version: '3.13'
     - run: |
         pip install requests
-        python install_mods.py
+        python install_mods.py '${{ secrets.CURSEFORGE_KEY }}'
     - name: Push branch
       uses: commit-check/commit-check-action@v1
       with:
