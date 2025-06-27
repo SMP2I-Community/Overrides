@@ -17,7 +17,6 @@ jobs:
       uses: EndBug/add-and-commit@v9
       with:
         add: '.'
-        new_branch: 'downloaded'
         commit: '--message "update mods"'
         push: 'origin downloaded --set-upstream --force'
         default_author: 'github_actions'
