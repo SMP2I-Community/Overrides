@@ -1,6 +1,8 @@
 name: Publish Overrides
 on:
-  push
+  push:
+    branches:
+      - 'downloaded'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,4 +21,4 @@ jobs:
         add: '.'
         default_author: github_actions
         new_branch: downloaded
-        tag: v${{ secrets.GITHUB_TOKEN }}
+        tag: v${{ secrets.run_number }}
