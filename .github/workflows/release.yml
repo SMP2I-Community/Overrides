@@ -12,14 +12,12 @@ jobs:
     - run: |
         pip install requests
         python install_mods.py '${{ secrets.CURSEFORGE_KEY }}'
-    - name: Push branch
-      uses: commit-check/commit-check-action@v1
+
+    - name: branch-deploy
+      id: branch-deploy
+      uses: github/branch-deploy@vX.X.X
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: "Download new mods"
-        dest-branch: downloaded
-        verify-checks: true
-        delete-after-checks: true
+        trigger: ".deploy"
         
     - name: Create a Release
       uses: actions/create-release@v1
