@@ -10,7 +10,7 @@ jobs:
       with:
         python-version: '3.13'
     - run: |
-        pip install requests -y
+        pip install requests
         python install_mods.py
     - name: Push branch
       uses: commit-check/commit-check-action@v1
