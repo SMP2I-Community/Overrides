@@ -7,24 +7,20 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: ${{ github.event.pull_request.head.repo.full_name }}
-        ref: ${{ github.event.pull_request.head.ref }}
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0             # otherwise, you will fail to push refs to dest repo
+    
     - uses: actions/setup-python@v5 
       with:
         python-version: '3.13'
     - run: |
         pip install requests
         python install_mods.py '${{ secrets.CURSEFORGE_KEY }}'
-    
-    - name: Change branch
-      run: |
-        git fetch
 
-    - name: Commit in downloaded branch
-      uses: EndBug/add-and-commit@v9
+    - name: Commit & Push changes
+      uses: actions-js/push@master
       with:
-        add: '.'
-        new_branch: 'downloaded'
-        push: 'origin downloaded --set-upstream --force'
-        commit: '--message "update overrides"'
-        default_author: 'github_actions'
+        message: 'Update Overrides'
+        branch: 'downloaded'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
