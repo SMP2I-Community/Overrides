@@ -26,4 +26,4 @@ jobs:
       with:
         release_branch: downloaded
         tag: ${{ github.run_number }}
-        title: ${{ github.run_number }}
+        name: ${{ github.run_number }}
