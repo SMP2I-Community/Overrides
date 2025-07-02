@@ -448,30 +448,64 @@ event.shapeless(
 
 
 
+const crea = ['iron_ingot','copper_ingot','gold_ingot','netherite_ingot','create:brass_ingot','cataclysm:witherite_ingot',
+    'cataclysm:ancient_metal_ingot','cataclysm:black_steel_ingot','cataclysm:ignitium_ingot','cataclysm:cursium_ingot',
+    'alexscaves:scarlet_neodymium_ingot','alexscaves:azure_neodymium_ingot','create:zinc_ingot','createdeco:industrial_iron_ingot',
+    'rats:oratchalcum_ingot','irons_spellbooks:arcane_ingot']
 
 
 
+event.recipes.create.mixing('kubejs:creative_ingot', crea).superheated()
 
 
+/*
+event.smithing(
+  'create:handheld_worldshaper',                     // arg 1: output
+  '#forge:template', // arg 2: the smithing template
+  'create:potato_cannon',                          // arg 3: the item to be upgraded
+  'kubejs:creative_ingot'                            // arg 4: the upgrade item
+)
+
+*/
+
+event.smithing(
+  'create:creative_motor',                     // arg 1: output
+  '#forge:template', // arg 2: the smithing template
+  'create:steam_engine',                          // arg 3: the item to be upgraded
+  'kubejs:creative_ingot'                            // arg 4: the upgrade item
+)
+
+event.smithing(
+  'rats:creative_cheese',                     // arg 1: output
+  '#forge:template', // arg 2: the smithing template
+  'rats:cheese',                          // arg 3: the item to be upgraded
+  'kubejs:creative_ingot'                            // arg 4: the upgrade item
+)
+
+event.smithing(
+  'create:creative_blaze_cake',                     // arg 1: output
+  '#forge:template', // arg 2: the smithing template
+  'create:blaze_cake',                          // arg 3: the item to be upgraded
+  'kubejs:creative_ingot'                            // arg 4: the upgrade item
+)
+
+event.smithing(
+  'create_sa:creative_filling_tank',                     // arg 1: output
+  '#forge:template', // arg 2: the smithing template
+  'create_sa:creative_filling_tank',                          // arg 3: the item to be upgraded
+  'kubejs:creative_ingot'                            // arg 4: the upgrade item
+)
+
+event.smithing(
+  'storagedrawers:creative_storage_upgrade',                     // arg 1: output
+  '#forge:template', // arg 2: the smithing template
+  'storagedrawers:upgrade_template',                          // arg 3: the item to be upgraded
+  'kubejs:creative_ingot'                            // arg 4: the upgrade item
+)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+event.remove({output:'irons_spellbooks:evoker_spell_book'})
+event.remove({output:'irons_spellbooks:necronomicon_spell_book'})
 
 
 

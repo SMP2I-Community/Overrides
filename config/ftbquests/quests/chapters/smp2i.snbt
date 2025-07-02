@@ -1,0 +1,441 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "smp2i"
+	group: ""
+	id: "1CABEDEC18A5757D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "543A83491318C947"
+			rewards: [{
+				id: "62B86ACD16F70EF4"
+				item: "b3_worldborder:expandercrystal_t1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "627A7A69D802C5B4"
+				title: "SMP2I"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1FB50087C3D4E5BB"
+			rewards: [{
+				id: "6C5B39D5974C7CCB"
+				item: "b3_worldborder:expandercrystal_t3"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
+				criterion: ""
+				id: "69450E72482AF748"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "7235A0B699DB1CCD"
+			rewards: [{
+				id: "6BE8F961FFFEE586"
+				item: "b3_worldborder:expandercrystal_t3"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/save_cachalot_whale"
+				criterion: ""
+				id: "16CB8A32DF84F4EA"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "6D4BAD8870DE1245"
+			rewards: [{
+				id: "451253E7C83935B7"
+				item: "b3_worldborder:expandercrystal_t3"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A82B68E3BCF0860"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 100
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			id: "6C343577EDD620D4"
+			rewards: [{
+				id: "0D25DB0F74C93768"
+				item: "b3_worldborder:expandercrystal_t2"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C43C38474524BBD"
+				stat: "minecraft:player_kills"
+				type: "stat"
+				value: 10
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			id: "7713E60FE9742E70"
+			rewards: [{
+				id: "4DEB0341EE1E2A85"
+				item: "b3_worldborder:expandercrystal_t3"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DE5AB67111DD908"
+				stat: "minecraft:time_since_death"
+				type: "stat"
+				value: 720000
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			id: "26BF8D81C8C4C19B"
+			tasks: [{
+				id: "285FBE3FE77A4BA4"
+				stat: "minecraft:pig_one_cm"
+				type: "stat"
+				value: 300000
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			id: "6D0140DDD5675398"
+			tasks: [{
+				id: "4083F445C30380AE"
+				stat: "minecraft:horse_one_cm"
+				type: "stat"
+				value: 3000000
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			id: "46FD71FC15AB71A4"
+			rewards: [{
+				id: "74BEF77491D14CC0"
+				item: "b3_worldborder:expandercrystal_t2"
+				type: "item"
+			}]
+			tasks: [{
+				id: "39C92D624A7B9BB0"
+				item: "compressium:cobblestone_5"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["46FD71FC15AB71A4"]
+			id: "602A59027FF73284"
+			rewards: [{
+				id: "6C4CD0B2839305B1"
+				item: "b3_worldborder:expandercrystal_t3"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35EEF65BFBA3E3BF"
+				item: "compressium:cobblestone_7"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["602A59027FF73284"]
+			id: "52F370802867F5DD"
+			rewards: [{
+				id: "396F03962535EBB2"
+				item: "b3_worldborder:expandercrystal_t4"
+				type: "item"
+			}]
+			tasks: [{
+				id: "421441AA5E7F5CAA"
+				item: "compressium:cobblestone_9"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			id: "7E9E940AB96411DF"
+			tasks: [{
+				id: "0301500B5F23FF65"
+				item: "compressium:dirt_5"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7E9E940AB96411DF"]
+			id: "2EE38CFAA6A6BE5E"
+			tasks: [{
+				id: "0B0882F4F0AAFE3F"
+				item: "compressium:dirt_7"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2EE38CFAA6A6BE5E"]
+			id: "03F89D5C6E07AABF"
+			tasks: [{
+				id: "12E1E90D827AADCA"
+				item: "compressium:dirt_9"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			id: "2731F9DF59F2258E"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/devils_hole_pupfish_bucket"
+				criterion: ""
+				id: "7D93E106AAF9D784"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "7D520FC09B4C4A26"
+			rewards: [{
+				id: "2E792BC007079584"
+				item: "b3_worldborder:expandercrystal_t2"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14E0AE520D910F66"
+				item: "rats:chunky_cheese_token"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "5D07CDB5A1CD36F0"
+			rewards: [{
+				count: 2
+				id: "59C91569DFB3DD43"
+				item: "b3_worldborder:expandercrystal_t3"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "colossalchests:base/diamond"
+				criterion: ""
+				id: "19654069D0895228"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			id: "74C9260F2D3A2DB8"
+			rewards: [{
+				id: "58B13D587C1AFB72"
+				item: "b3_worldborder:expandercrystal_t4"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "farmersdelight:main/master_chef"
+				criterion: ""
+				id: "55E79DFB997169F1"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			id: "3193B2F2551AFD38"
+			rewards: [{
+				id: "21343BBE878EFF88"
+				item: "b3_worldborder:expandercrystal_t2"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:crushing_wheel"
+				criterion: ""
+				id: "3B37BF0AB3FADA31"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			id: "129B0595C6C3E8F5"
+			rewards: [{
+				id: "43DDB53811E3DF5D"
+				item: "b3_worldborder:expandercrystal_t3"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "alexscaves:alexscaves/beholder_far_away"
+				criterion: ""
+				id: "733C51E82BE5EEFD"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			id: "0FF4E84BCE7C904E"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/dinosaurs_minecart"
+				criterion: ""
+				id: "2D4DEF7DAC3BDDBF"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "72CF0B447D6B42BA"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/nuclear_bomb"
+				criterion: ""
+				id: "21085FF6212FD496"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			id: "6261CAB3369981D7"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/deep_ones_become_helpful"
+				criterion: ""
+				id: "2394391425037554"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			id: "6A3E937A8C2C1BD5"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/ride_gum_worm"
+				criterion: ""
+				id: "3CC87052016B9585"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			id: "6D4D71A840EA12D6"
+			tasks: [{
+				advancement: "apotheosis:enchanting/upgrade_endshelf"
+				criterion: ""
+				id: "305C111FFE38043F"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			id: "145EB2510E86B051"
+			tasks: [{
+				advancement: "apotheosis:enchanting/max_rectified"
+				criterion: ""
+				id: "0EB7AB4C8A1D9A3C"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			id: "2EBEA2F0D6BE231F"
+			tasks: [{
+				advancement: "apotheosis:enchanting/100ench"
+				criterion: ""
+				id: "301F92A90410AAAA"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			id: "3B933C8B31DB032C"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/la_cucaracha"
+				criterion: ""
+				id: "43B00B16656AD2C2"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			id: "57FF1A34C5580F99"
+			tasks: [{
+				advancement: "ratlantis:rat_upgrade_nonbeliever"
+				criterion: ""
+				id: "5729E9D3671EF58E"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			id: "4C04724E77C03548"
+			tasks: [{
+				advancement: "apotheotic_additions:main/ascended_coin"
+				criterion: ""
+				id: "535EE191826D8BA0"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			id: "5A64E77F390CF226"
+			rewards: [{
+				id: "218369EDE74B26D7"
+				item: "b3_worldborder:expandercrystal_t4"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "apotheosis:spawner/ultimate_spawner"
+				criterion: ""
+				id: "22FA1569797479BD"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			id: "2C5BED73BCD4213B"
+			rewards: [{
+				id: "01BAE8A5CEDB85A6"
+				item: "b3_worldborder:expandercrystal_t4"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "ratlantis:ratlantis_armor"
+				criterion: ""
+				id: "697DDE91321A238B"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+	]
+	title: "SMP2I"
+}

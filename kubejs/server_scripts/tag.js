@@ -54,16 +54,18 @@ event.add('forge:crystal_t4', 'scalinghealth:power_crystal_shard' )
 
 
 const creative = [/.*ingot.*/,]
-const blacklist = ['brick', 'nether_brick','andesite_alloy','kubejs:creative_ingot']
 
   creative.forEach(item => {
-    if (!blacklist.includes(item)) event.add('forge:00', item)
+    event.add('forge:creative', item)
   })
 
-event.add('forge:00', "minecraft:iron_ingot")
+event.remove('forge:creative', 'kubejs:creative_ingot')
 
+const template = [/.*template.*/]
 
-
-
+template.forEach(item =>{
+  event.add('forge:template', item)
+})
+event.remove('forge:template','storagedrawers:upgrade_template')
 
 })
