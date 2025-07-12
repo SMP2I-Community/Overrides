@@ -69,7 +69,7 @@ event.recipes.create.mechanical_crafting('alexscaves:fissile_core', [
     '  C  '
     ], {
     C: 'createdeco:industrial_iron_ingot',
-    T: 'alexscaves:uranium_rod',
+    T: 'minecraft:glass',
     U: 'alexscaves:block_of_uranium',
     })
 
