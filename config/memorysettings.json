@@ -13,7 +13,7 @@
   },
   "maximumServer": {
     "desc:": "Set the servers maximum memory warning threshold in MB. Choose a generous maximum with some additional over the required, e.g.recommended is 6000mb then set this to ~8000mb",
-    "maximumServer": 8500
+    "maximumServer": 85000
   },
   "disableWarnings": {
     "desc:": "Disable the memory warnings, default: false",
