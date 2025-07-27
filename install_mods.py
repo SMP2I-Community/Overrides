@@ -1,4 +1,4 @@
-# This file is used int the downloaded branch
+# This file is used in the downloaded branch
 
 import os
 import sys
