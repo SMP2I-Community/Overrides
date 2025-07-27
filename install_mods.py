@@ -17,8 +17,6 @@ headers = {
   'x-api-key': key
 }
 
-print(headers)
-
 class DownloadInfo:
     def __init__(self, url, file_name):
         self.url = url
