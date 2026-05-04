@@ -1,4 +1,3 @@
-
 ["milestone celebration"]
 	#If true, reaching a new milestone plays a ding sound.
 	shouldPlayMilestoneSounds = true
@@ -14,4 +13,3 @@
 	shouldShowProgressAboveHotbar = true
 	#If true, the food book also lists foods that you haven't eaten, in addition to the ones you have.
 	shouldShowUneatenFoods = true
-

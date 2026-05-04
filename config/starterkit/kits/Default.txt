@@ -3,7 +3,7 @@
 'legs' : '',
 'feet' : '',
 'offhand' : '',
-0 : '{Count:10b,id:"minecraft:bread"}',
+0 : '{count:12,id:"spawn:tuna_sandwich"}',
 1 : '',
 2 : '',
 3 : '',
